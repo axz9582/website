@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './pages/About';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <NavBar/>
       </header>
       <main className="App-main">
-        <About/>
+        <Home/>
       </main>
     </div>
   );
