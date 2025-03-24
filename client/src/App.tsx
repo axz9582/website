@@ -1,14 +1,18 @@
-// import './App.css';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h1>
+          Andrew Zhang
+        </h1>
+      </header>
+      <main className="App-main">
         <p>
           test test test
         </p>
-      </header>
+      </main>
     </div>
   );
 }
