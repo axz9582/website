@@ -20,7 +20,15 @@ const Socials = [
 ]
 
 function Home () {
-
+    const downloadPdf = () => {
+        const pdfUrl = "andrew_zhang_resume.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "az_resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <div>
             <Container>
@@ -39,13 +47,13 @@ function Home () {
                             </header>
                             <div>
                                 <div>
-                                    <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary">Download CV</Button>
+                                    <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary" onClick={downloadPdf}>Download CV</Button>
                                     <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary" href='#contact'>Contact Info</Button>
                                 </div>
                                 <div>
                                     {Socials.map((social) => {
                                         return (
-                                            <Button className='mx-2 my-3' variant="dark" style={{borderRadius:50}} href={social.url} rel="noreferrer">
+                                            <Button className='mx-2 my-3' variant="dark" style={{borderRadius:50}} href={social.url} target="_blank" rel="noreferrer">
                                                 <social.icon color='White' width={20} height={32} />
                                             </Button>
                                         );
