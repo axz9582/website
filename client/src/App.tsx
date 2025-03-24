@@ -1,14 +1,17 @@
-// import './App.css';
+import './App.css';
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          test test test
-        </p>
+        <NavBar/>
       </header>
+      <main className="App-main">
+        <Home/>
+      </main>
     </div>
   );
 }
