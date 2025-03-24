@@ -48,6 +48,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
+    - name: where are we
+      run: ls
 
     - name: Open project
       run: cd client
