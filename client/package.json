@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://axz9582.github.io/react-gh-pages",
+  "homepage": "https://axz9582.github.io/",
   "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
