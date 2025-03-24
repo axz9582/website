@@ -61,4 +61,7 @@ jobs:
 
     - name: Deploy
       working-directory: ./client
-      run: npm run deploy
+      run: |
+        git config --global user.name "Andrew"
+        git config --global user.email "zandy99@gmail.com"
+        npm run deploy
