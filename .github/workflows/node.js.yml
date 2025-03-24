@@ -62,6 +62,7 @@ jobs:
     - name: Deploy
       working-directory: ./client
       run: |
-        git config --global user.name "axz9582"
-        git config --global user.email "zandy99@gmail.com"
-        npm run deploy
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
