@@ -1,17 +1,16 @@
 import './App.css';
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './pages/About';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          Andrew Zhang
-        </h1>
+        <NavBar/>
       </header>
       <main className="App-main">
-        <p>
-          test test test
-        </p>
+        <About/>
       </main>
     </div>
   );
