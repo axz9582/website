@@ -40,7 +40,7 @@ function Home () {
                             <div>
                                 <div>
                                     <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary">Download CV</Button>
-                                    <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary" href='/contact'>Contact Info</Button>
+                                    <Button className="mx-1 my-2 rounded-pill" variant="outline-secondary" href='#contact'>Contact Info</Button>
                                 </div>
                                 <div>
                                     {Socials.map((social) => {
